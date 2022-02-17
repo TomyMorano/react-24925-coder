@@ -15,7 +15,7 @@ const ItemCount = ({stock=5,initial=0}) => {
         }
     }
     const addCart = ()=>{
-        if (contador >0) {
+        if (contador <0) {
             console.log(`se agregaron ${contador} productos al carrito`)    
         }
         

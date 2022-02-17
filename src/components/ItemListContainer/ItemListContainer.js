@@ -1,10 +1,31 @@
 import ItemCount from "../ItemCount/ItemCount"
+import ItemList from "../ItemList/ItemList"
+import { useState,useEffect } from "react"
+import getProducts from "../../asyncMock"
+import "./ItemListContainer.css"
 
+const ItemListContainer = () =>{
+    const [products, setProducts] = useState([])
+    
+    const [loading, setLoading] = useState(true)
 
-const ItemListContainer = ({greeting,bg,c,ta,fs}) =>{
+    useEffect(()=>{
+        getProducts().then(producto => {
+            setProducts(producto)
+        }).catch(error =>{
+            console.log(`algo salio mal ${error}`);
+        }).finally(()=>{
+            setLoading(false)
+        })
+        return(()=>{
+            setProducts()
+        })
+    }, [])
+
     return(
-        <div style={{textAlign:ta}}>
-            <h3 style={{backgroundColor:bg,color:c,fontSize:fs}}>{greeting}</h3>
+        <div className="ItemListContainer">
+            {loading ? <h5>Cargando...</h5>
+            : <ItemList productos={products}/>}
             <ItemCount stock={11} initial={2}/>
         </div>
     )

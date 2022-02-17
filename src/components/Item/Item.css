@@ -1,0 +1,28 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem 0rem;
+    text-align: center;
+    
+    color: white;
+    border: solid royalblue 10px;
+}
+
+.card img{
+    width: 200px;
+    height: 200px;
+    margin: 1.5rem 1.5rem;
+    align-self: center;
+    object-fit: contain;
+}
+
+.card h3{
+    font-size: 1.6rem ;
+    margin: 2rem 2rem;
+}
+
+.card p {
+    font-size: 2.5rem;
+    margin: 2rem 2rem
+}

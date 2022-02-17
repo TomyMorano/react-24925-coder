@@ -5,7 +5,7 @@ function App() {
   return (
     <div >
       <NavBar/>
-      <ItemListContainer greeting="Buenas tutor!" bg="cornflowerblue" c="white" ta="center" fs="3rem"/>
+      <ItemListContainer/>
     </div>
   );
 }

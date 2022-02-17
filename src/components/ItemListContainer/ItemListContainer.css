@@ -1,0 +1,10 @@
+.ItemListContainer{
+    text-align: center;
+    color: white;
+    background-color: cornflowerblue;
+}
+
+.ItemListContainer h5{
+    padding: 2rem 2rem;
+    font-size: 3rem;
+}
