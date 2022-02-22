@@ -1,0 +1,10 @@
+.ItemDetailContainer{
+    text-align: center;
+    color: white;
+    background-color: cornflowerblue;
+}
+
+.ItemDetailContainer h5{
+
+    font-size: 3rem;
+}

@@ -24,9 +24,9 @@ const ItemListContainer = () =>{
 
     return(
         <div className="ItemListContainer">
-            {loading ? <h5>Cargando...</h5>
+            {loading && products.length===0 ? <h5>Cargando...</h5>
             : <ItemList productos={products}/>}
-            <ItemCount stock={11} initial={2}/>
+            <ItemCount stock={11} initial={1}/>
         </div>
     )
 }
