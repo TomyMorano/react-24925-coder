@@ -9,6 +9,7 @@ const ItemDetail = ({nombre,img,precio,detalles,stock})=>{
             <p>{detalles}</p>
             <h4>${precio}</h4>
             <ItemCount stock={stock} initial={1}/>
+            <h3>Contamos con {stock} unidades en stock.</h3>
         </div>
     )
 }
