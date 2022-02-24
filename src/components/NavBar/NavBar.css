@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    padding: 1.5rem;
+}
+.nav h2 {
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
+}
+.nav a{
+    text-decoration: none;
+}
+
+.ActiveNav{
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    padding: 1.5rem;
+}
+
+.ActiveNav h2 {
+    color: white;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.ActiveNav button{
+    background-color: blue;
+}
+.ActiveNav a{
+    text-decoration: none;
+}
+.categoriesNav{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
