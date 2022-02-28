@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import Button from '../Buttton/Button'
 
-const ItemCount = ({stock=5,initial=0}) => {
+const ItemCount = ({stock=5,initial=0, onAdd}) => {
     const [contador, setContador] = useState(initial)
 
     const add = ()=>{
@@ -14,12 +14,11 @@ const ItemCount = ({stock=5,initial=0}) => {
             setContador(contador - 1)
         }
     }
-    const addCart = ()=>{
-        if (contador > 0) {
-            console.log(`se agregaron ${contador} productos al carrito`)    
-        }
-        
-    }
+    //const addCart = ()=>{
+    //    if (contador > 0) {
+    //        console.log(`se agregaron ${contador} productos al carrito`)    
+    //    }
+    //}
 
     return(
         <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
@@ -28,7 +27,8 @@ const ItemCount = ({stock=5,initial=0}) => {
                 <button onClick={()=>{add()}}>+</button>
                 <button onClick={()=>{sub()}}>-</button>
             </div>
-            <Button onClick={()=>{addCart()}}>Agregar al carrito</Button>
+            <Button onClick={()=>{onAdd(contador)}}>Agregar al carrito</Button>
+            
         </div>
     )
 }

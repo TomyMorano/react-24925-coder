@@ -1,4 +1,7 @@
-.cart{
+.cart {
+    color: royalblue;
+}
+.cart svg{
     width: 50px;
     height: 60px;
 }

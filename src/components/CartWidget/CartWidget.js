@@ -1,8 +1,11 @@
 import "./CartWidget.css"
 import { BsFillCartFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
+
 const CartWidget =()=>{
     return(
-        <BsFillCartFill className="cart"/>
+        <Link to={'/cart'}  className="cart"><BsFillCartFill/></Link>
+        
     )
 }
 
