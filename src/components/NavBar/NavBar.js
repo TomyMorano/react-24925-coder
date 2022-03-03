@@ -14,6 +14,7 @@ const NavBar = ()=>{
       }, [])
 
     return(
+        <>
         <nav className="nav">
             <div>
                 <Link to={'/'}><h2>Tienda React</h2></Link> 
@@ -22,11 +23,13 @@ const NavBar = ()=>{
                 {categories.map(cat => <NavLink key={cat.id} 
                 to={`/category/${cat.id}`} 
                 className={({ isActive }) =>
-                isActive ? 'ActiveNav' : 'nav'}
+                isActive ? 'ActiveNav' : 'navBtn'}
                 ><Button>{cat.detalles}</Button></NavLink>)}
             </div>
             <CartWidget/>
         </nav>
+        <hr className="hr"></hr>
+        </>
     )
 }
 

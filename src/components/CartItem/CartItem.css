@@ -1,0 +1,50 @@
+.cartCard{
+    background-color: cornflowerblue !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+}
+
+.cartCard h3{
+    color: white;
+    font-size: 1rem;
+    margin: 1rem 0rem;
+}
+
+.cartCard img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.cartItem hr{
+    background-color: royalblue;
+    border: none;
+    height: 3px;
+}
+
+.cartItem button{
+    padding: 0;
+    border:cornflowerblue 2px solid;
+    width: 2rem;
+}
+.cartCard a,span{
+    margin: 0;
+    padding: 0;
+}
+.btnDiv{
+    display:flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .cartCard img{
+        width: 100px;
+        height: 100px;
+    }
+    .cartCard h3{
+        font-size: 1.5rem;
+    }
+}

@@ -6,12 +6,11 @@ button {
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 17px;
-    width: 130px;
+    font-size: 1rem;
+    width: auto;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
-    padding: 1rem;
+    margin: 1rem 0;
    }
    
    button span {
@@ -31,10 +30,17 @@ button {
    }
    
    button:hover span {
-    padding-right: 15px;
+    padding-right: 5px;
    }
    
    button:hover span:after {
     opacity: 1;
     right: 0;
    }
+
+   @media (min-width: 768px) {
+    button{
+        width: 10rem;
+        padding: 0.5rem 1rem;
+    }
+  }

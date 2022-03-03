@@ -2,11 +2,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 2rem 0rem;
+    margin: 2rem 0.5rem;
     text-align: center;
-    
     color: white;
-    border: solid royalblue 10px;
+    border: solid royalblue 3px;
+    border-radius: 12px;
 }
 
 .card img{

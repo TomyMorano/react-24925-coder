@@ -1,7 +1,13 @@
+*{padding: 0;}
 .cart {
     color: royalblue;
+    display: flex;
+    align-items: center;
 }
 .cart svg{
-    width: 50px;
-    height: 60px;
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.cart h4{
+    font-size: 1.5rem;
 }
