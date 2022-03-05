@@ -17,6 +17,7 @@ function App() {
             <Route path='category/:categoryId' element={<ItemListContainer/>}/>
             <Route path='product/:productId' element={<ItemDetailContainer/>}/>
             <Route path='/cart' element={<Cart/>}/>
+            <Route path='/*' element={<h1 style={{color:'white'}}>Error 404. No se encuentra esa página.</h1>}/>
           </Routes>
         </BrowserRouter>
       </CartContextProvider>
