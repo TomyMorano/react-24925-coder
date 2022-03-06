@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import Button from '../Buttton/Button'
-
+import './ItemCount.css'
 const ItemCount = ({stock=5,initial=0, onAdd}) => {
     const [contador, setContador] = useState(initial)
 
@@ -21,13 +21,16 @@ const ItemCount = ({stock=5,initial=0, onAdd}) => {
     //}
 
     return(
-        <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"}}>
-            <h3>{contador}</h3>
-            <div>
+        <div className='itemCount'>
+            <div className='itemCountDiv'>
                 <button onClick={()=>{add()}}>+</button>
+                <h3>{contador}</h3> 
                 <button onClick={()=>{sub()}}>-</button>
             </div>
-            <Button onClick={()=>{onAdd(contador)}}>Agregar al carrito</Button>
+            <div className='btnCounter'>
+                <Button onClick={()=>{onAdd(contador)}}>Agregar al carrito</Button>
+            </div>
+            
             
         </div>
     )

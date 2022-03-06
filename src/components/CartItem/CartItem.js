@@ -17,8 +17,10 @@ const CartItem = ({nombre,img,precio,id,detalles,quantity}) =>{
                 <h3>${precio}</h3>
                 <Button onClick={()=>{removeProduct(id)}}>X</Button>
             </div>
-            
-            <hr></hr>        
+            <div className='cartItemHr'>
+                <hr ></hr>     
+            </div>
+               
         </article>
 
     )

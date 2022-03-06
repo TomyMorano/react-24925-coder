@@ -1,6 +1,6 @@
 .cardContainer{
-    background-color: cornflowerblue;
+    background-color: #FDFDF3;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }

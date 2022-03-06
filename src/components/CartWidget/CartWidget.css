@@ -1,6 +1,6 @@
 *{padding: 0;}
 .cart {
-    color: royalblue;
+    color: #A9A9A9;
     display: flex;
     align-items: center;
 }
@@ -11,3 +11,10 @@
 .cart h4{
     font-size: 1.5rem;
 }
+
+@media (min-width: 768px) {
+    .cart svg{
+        width: 3rem;
+        height: 3rem;
+    }
+  }

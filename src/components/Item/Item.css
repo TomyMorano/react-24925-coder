@@ -1,17 +1,17 @@
 .card{
     display: flex;
-    flex-direction: column;
+    flex-direction: column !important;
     justify-content: center;
     margin: 2rem 0.5rem;
     text-align: center;
     color: white;
-    border: solid royalblue 3px;
+    border: solid #FFE4E1 3px;
     border-radius: 12px;
 }
 
 .card img{
-    width: 200px;
-    height: 200px;
+    width: 160px !important;
+    height: 160px !important;
     margin: 1.5rem 1.5rem;
     align-self: center;
     object-fit: contain;
@@ -28,10 +28,10 @@
 .btn {
     display: inline-block;
     border-radius: 4px;
-    background-color: royalblue;
+    background-color: #FFE4E1;
     align-self: center;
     border: none;
-    color: #FFFFFF;
+    color: #a9a9a9 !important;
     text-align: center;
     font-size: 17px;
     padding: 16px;
@@ -46,6 +46,8 @@
     display: inline-block;
     position: relative;
     transition: 0.5s;
+    color: #a9a9a9;
+    font-weight: bold;
    }
    
    .btn span:after {

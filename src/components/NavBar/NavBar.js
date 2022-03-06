@@ -27,9 +27,7 @@ const NavBar = ()=>{
     return(
         <>
         <nav className="nav">
-            <div>
-                <Link to={'/'}><h2>Tienda React</h2></Link> 
-            </div>
+            <Link to={'/'}><h2>Tienda React</h2></Link>
             <div className="categoriesNav">
                 {categories.map(cat => <NavLink key={cat.id} 
                 to={`/category/${cat.id}`} 

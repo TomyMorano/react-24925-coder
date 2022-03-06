@@ -4,10 +4,10 @@
 .ItemDetailContainer{
     text-align: center;
     color: white;
-    background-color: cornflowerblue;
+    background-color: #fdfdf3;
 }
 
 .ItemDetailContainer h5{
-
+    color: #a9a9a9;
     font-size: 3rem;
 }

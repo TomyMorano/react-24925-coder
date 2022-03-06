@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;400&display=swap');
 
 html{
-  background-color: cornflowerblue;
+  background-color: #FDFDF3;
   width: 100%;
+
+  
 }
 .App {
   text-align: center;
-  background-color: cornflowerblue !important;
+  background-color: #fdfdf3 !important;
+  font-family: 'Arima Madurai', cursive;
 }
 
 

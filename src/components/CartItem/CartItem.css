@@ -1,38 +1,49 @@
 .cartCard{
-    background-color: cornflowerblue !important;
+    background-color: white !important;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     max-width: 100%;
+    margin: 0.5em 3rem;
 }
 
 .cartCard h3{
-    color: white;
+    color: #A9A9A9;
     font-size: 1rem;
     margin: 1rem 0rem;
 }
 
 .cartCard img{
-    width: 50px;
-    height: 50px;
+    width: 50px !important;
+    height: 50px !important;
+
     object-fit: contain;
 }
 
-.cartItem hr{
-    background-color: royalblue;
+.cartItemHr {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.cartItemHr hr{
+    
+    background-color: #FFE4E1;;
     border: none;
     height: 3px;
 }
 
 .cartItem button{
-    padding: 0;
-    border:cornflowerblue 2px solid;
+    padding: 0.5rem;
+    border:#FFE4E1 2px solid;
     width: 2rem;
+    
 }
 .cartCard a,span{
+    color: #edd3ca;
     margin: 0;
     padding: 0;
+    border: none;
 }
 .btnDiv{
     display:flex;
