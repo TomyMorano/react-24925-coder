@@ -1,4 +1,4 @@
-/*const products = [
+/*/*const products = [
 
     /*{id:1,nombre:"Teclado Mecánico Redragon Draconic K530",precio:6999,categoria:"Teclados",img:"/img/redragonDraconicK530.jpg",stock:12,detalles:`Disfrutá de tus partidas en otro nivel con Redragon, marca reconocida que se especializa en brindar la mejor experiencia de juego al público gamer desde hace más de 20 años. Sus teclados se adaptan a todo tipo de jugadores y esto los convierten en un fiel reflejo de la alta gama y calidad que la compañía ofrece.
 
@@ -35,8 +35,7 @@
     El formato perfecto para vos
     El diseño over-ear brinda una comodidad insuperable gracias a sus suaves almohadillas. Al mismo tiempo, su sonido envolvente del más alto nivel se convierte en el protagonista de la escena.`},*/
 
-]
-
+/*
 const categories = [
     {id: 'Teclados', detalles: 'Teclados'},
     {id: 'Mouses', detalles: 'Mouses'},
