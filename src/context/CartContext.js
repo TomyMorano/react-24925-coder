@@ -13,17 +13,16 @@ export const CartContextProvider = ({children}) =>{
         }
         
         if(isInCart(productToAdd.id)){
-            const alteredProduct = cart.filter(p=>p.id ===productToAdd.id)
+            const alteredProduct = cart.filter(product=>product.id ===productToAdd.id)
     
-                alteredProduct.map((p)=>(
-                    p.quantity = p.quantity + quantity
+                alteredProduct.map((product)=>(
+                    product.quantity = product.quantity + quantity
                 ))
     
             setCart([...removeProduct(productToAdd.id),...alteredProduct])
         }else if(!isInCart(productToAdd)){
             setCart([...cart,newProduct])
         }
-
     }
     
     const getQuantity = ()=>{
@@ -34,24 +33,36 @@ export const CartContextProvider = ({children}) =>{
         
         return contador
     }
+
+    const getQuantityId = (id)=>{
+        let contador= 0
+
+        let filtrado = cart.filter(product => product.id === id)
+
+        filtrado.forEach(product=>{
+            contador += product.quantity
+        })
+        
+        return contador
+    }
     
     const getTotal = ()=>{
         let contador = 0
-        cart.forEach(p=>{
-            contador+= p.quantity *p.precio
+        cart.forEach(product=>{
+            contador+= product.quantity * product.precio
         })
         return contador
     }
 
     const removeProduct=(id)=>{
-        let newCart = cart.filter(p=>p.id !== id)
+        let newCart = cart.filter(product => product.id !== id)
         setCart([...newCart])
         return newCart
     }
     
     const isInCart =(id)=>{
         if (cart !==undefined){
-            return cart.some(p=> p.id === id)
+            return cart.some(product=> product.id === id)
         }
     }
 
@@ -60,7 +71,6 @@ export const CartContextProvider = ({children}) =>{
     }
     console.log(cart);
     
-
     return(
         <CartContext.Provider value={{
             cart,
@@ -68,7 +78,9 @@ export const CartContextProvider = ({children}) =>{
             removeProduct,
             getQuantity,
             clearCart,
-            getTotal
+            getTotal,
+            getQuantityId,
+            isInCart 
         }}>
             {children}
         </CartContext.Provider>

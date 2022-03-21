@@ -40,7 +40,7 @@ const ContactForm = ({ toggleVisibility, setContact }) => {
             <label className='LabelContact'>Telefono:
               <input
                 className='InputContact'
-                type='text'
+                type='number'
                 value={phone}
                 onChange={({ target }) => setPhone(target.value)}
               />

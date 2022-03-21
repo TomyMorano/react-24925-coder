@@ -8,7 +8,7 @@ import CartContext from "../../context/CartContext"
 const ItemDetail = ({id,nombre,img,precio,detalles,stock,categoria})=>{
     const [quantity, setQuantity] = useState(0)
 
-    const {addProduct}= useContext(CartContext)
+    const {addProduct, getQuantityId, isInCart}= useContext(CartContext)
 
     const onAdd = (quantityToAdd)=>{
         setQuantity(quantityToAdd)
@@ -25,7 +25,8 @@ const ItemDetail = ({id,nombre,img,precio,detalles,stock,categoria})=>{
     
         addProduct(productToAdd,quantityToAdd)
     }
-   
+
+    console.log(getQuantityId(id));
     return(
         <div className="card cardCont">
             <div>
@@ -37,8 +38,8 @@ const ItemDetail = ({id,nombre,img,precio,detalles,stock,categoria})=>{
                 <h4>${precio}</h4>
                 {quantity<=0 ?
                 <>
-                    <ItemCount stock={stock} initial={1} onAdd={onAdd} />
-                    <h3>Contamos con {stock} unidades en stock.</h3>
+                    <ItemCount stock={(stock - getQuantityId(id))} initial={1} onAdd={onAdd} />
+                    <h3>Contamos con {(stock - getQuantityId(id))} unidades en stock {isInCart(id) && ` ,(Aparte de las ${getQuantityId(id)} unidades en el carrito).`}</h3>
                 </>
                 : <Link to={'/cart'}><Button>Terminar Compra</Button></Link>}
             </div>
