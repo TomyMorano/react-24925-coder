@@ -1,0 +1,15 @@
+.ItemListContainer{
+    text-align: center;
+    color: white;
+    background-color: #FDFDF3;
+}
+
+.ItemListContainer h5{
+    color: #a9a9a9;
+    padding: 2rem 2rem;
+    font-size: 3rem;
+}
+
+.ItemListContainer div div{
+    margin: 1.5rem 1.5rem;
+}
