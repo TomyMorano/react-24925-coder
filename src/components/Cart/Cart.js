@@ -80,7 +80,6 @@ const Cart = ()=>{
             
         } else {
             setToastNotification('error','completa los datos de contacto para confirmar la orden', 5000)
-            console.log('completa los datos de contacto para confirmar la orden');
         }
     }
 

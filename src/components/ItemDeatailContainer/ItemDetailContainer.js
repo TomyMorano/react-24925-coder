@@ -20,16 +20,23 @@ const ItemDetailContainer = ()=>{
         }).finally(()=>{
             setLoading(false)
         })
-
+        
         return(()=>{
             setProduct([])
         })
     },[productId])
+    
+    if(loading || !product){
+        return(
+            <div className="ItemDetailContainer">
+                <h5>Cargando...</h5>
+            </div>
+        )
+    }
 
     return(
         <div className="ItemDetailContainer">
-            {loading || !product ? <h5>Cargando...</h5>
-            :<ItemDetail {...product}/>}
+            {<ItemDetail {...product}/>}
         </div>
     )
 }

@@ -6,7 +6,7 @@ import Cart from './components/Cart/Cart';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { CartContextProvider } from './context/CartContext';
 import { NotificationServicesProvider } from './services/notificationToast/notificationToast';
-
+import Error404 from './components/404/404';
 function App() {
   return (
     <div className='App'>
@@ -19,7 +19,7 @@ function App() {
               				<Route path='category/:categoryId' element={<ItemListContainer/>}/>
               				<Route path='product/:productId' element={<ItemDetailContainer/>}/>
               				<Route path='/cart' element={<Cart/>}/>
-              				<Route path='/*' element={<h1 style={{color:'white'}}>Error 404. No se encuentra esa página.</h1>}/>
+              				<Route path='/*' element={<Error404/>}/>
             			</Routes>
           		</BrowserRouter>
         	</CartContextProvider>

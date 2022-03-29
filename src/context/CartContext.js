@@ -69,7 +69,6 @@ export const CartContextProvider = ({children}) =>{
     const clearCart = ()=>{
         setCart([])
     }
-    console.log(cart);
     
     return(
         <CartContext.Provider value={{
