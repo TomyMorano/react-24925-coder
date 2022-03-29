@@ -4,7 +4,8 @@ import { useState,useContext } from "react"
 import { Link } from "react-router-dom"
 import Button from "../Buttton/Button"
 import CartContext from "../../context/CartContext"
-import Error404 from "../404/404"
+import Error404 from "../Error404/404"
+
 const ItemDetail = ({id,nombre,img,precio,detalles,stock,categoria})=>{
     const [quantity, setQuantity] = useState(0)
 

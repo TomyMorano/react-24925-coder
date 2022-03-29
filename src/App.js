@@ -6,7 +6,8 @@ import Cart from './components/Cart/Cart';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { CartContextProvider } from './context/CartContext';
 import { NotificationServicesProvider } from './services/notificationToast/notificationToast';
-import Error404 from './components/404/404';
+import Error404 from './components/Error404/404';
+
 function App() {
   return (
     <div className='App'>
